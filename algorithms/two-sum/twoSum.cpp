@@ -1,6 +1,6 @@
 
 // Source : https://oj.leetcode.com/problems/two-sum/
-// Author : lixianmin
+// Author : lixianmin#live.cn
 // Date   : 2017-03-20
 
 /**********************************************************************************
