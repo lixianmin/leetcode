@@ -1,3 +1,4 @@
+
 ---
 ### leetcode
 既然默认给出的名字README.md是大写的， 我也就不自己改成小写了（其实小写的readme.md在github上也是认的）
@@ -9,5 +10,5 @@
 |#		| Problem	| Solution  | Difficulty	|
 |--	  |--			  |--			    |--				    |
 |1		| [two sum](https://leetcode.com/problems/two-sum/)  | [C++](https://github.com/lixianmin/leetcode/tree/master/algorithms/two-sum) | Easy |
-|18	  | [4 sum](https://leetcode.com/problems/4sum) | [C++](https://github.com/lixianmin/leetcode/tree/master/algorithms/4sum)| Medium	|
+|18	  | [4sum](https://leetcode.com/problems/4sum) | [C++](https://github.com/lixianmin/leetcode/tree/master/algorithms/4sum)| Medium	|
 |23	  | [merge k sorted lists](https://leetcode.com/problems/merge-k-sorted-lists/)  | [C++](https://github.com/lixianmin/leetcode/tree/master/algorithms/merge-k-sorted-lists) | Medium |
