@@ -1,6 +1,6 @@
 
 ---
-### leetcode
+### [LeetCode](https://leetcode.com/problemset/algorithms/)
 既然默认给出的名字README.md是大写的， 我也就不自己改成小写了（其实小写的readme.md在github上也是认的）
 
 只所以想到做这个东西，最开始是因为看到陈皓在做[LEETCODE 编程训练](http://www.coolshell.cn/articles/12052.html)，一时没忍住想跟大神学习一下，他的[LeetCode代码地址](https://github.com/haoel/leetcode)
