@@ -1,9 +1,13 @@
 
 
 ---
+#### [merge k sorted lists](https://leetcode.com/problems/merge-k-sorted-lists/) 
+
 一开始想到的仍然是最简单的recursive调用方式，即每两个list都合并，合并出来的结果再与下一个list合并，这个时间复杂度是比较高的。
 
 K路合并问题，使用**最小堆**是一个更好的策略，这在c++中有两种办法，一是std::priority_queue，二是std::make_heap
+
+另外 partition策略，本来只是顺手一试，本以为跟brute force方式差不多，却意外发现提交后速度非常快，再仔细一想，这是divide & conquer策略啊，跟[merge sort](https://en.wikipedia.org/wiki/Merge_sort)完全是一样的时间复杂度。
 
 ---
 #### std::priority_queue< ListNode*, std::vector< ListNode*>, ListNodeComparer>
@@ -54,3 +58,7 @@ Caution:
 
 因为std::priority_queue通常是std::vector的adapter，因此如果不是特别需要随机访问std::vector中的元素的话，可能没有必要使用std::make_heap，直接使用std::priority_queue即可。
 
+---
+#### partition方案 ⇒ divide and conquer
+
+这是意外之喜，仔细分析了一下时间复杂度是  T(n) = 2T(n/2) + n ，这跟[merge sort](https://en.wikipedia.org/wiki/Merge_sort)完全一模一样的，以后要留意了。
