@@ -11,4 +11,4 @@
 |--	  |--			  |--			    |--				    |
 |1		| [two sum](https://leetcode.com/problems/two-sum/)  | [C++](https://github.com/lixianmin/leetcode/tree/master/algorithms/two-sum) | Easy |
 |18	  | [4sum](https://leetcode.com/problems/4sum) | [C++](https://github.com/lixianmin/leetcode/tree/master/algorithms/4sum)| Medium	|
-|23	  | [merge k sorted lists](https://leetcode.com/problems/merge-k-sorted-lists/)  | [C++](https://github.com/lixianmin/leetcode/tree/master/algorithms/merge-k-sorted-lists) | Medium |
+|23	  | [merge k sorted lists](https://leetcode.com/problems/merge-k-sorted-lists/)  | [C++](https://github.com/lixianmin/leetcode/tree/master/algorithms/merge-k-sorted-lists) | Hard |
