@@ -23,3 +23,34 @@ struct ListNodeComparer
 };
 
 ```
+
+Caution:
+
+1. 不能直接使用std::priority_quque<> q(v.begin(), v.end());的形式去创建q，因为v中的指针有可能是NULL啊
+2. 在链表相关的问题中，使用一个**栈上的preHead对象**，很多时候可以极大简化链表指针的调整逻辑， 参考代码如下：
+
+```
+	ListNode head(0), *p = &head;
+	while (!q.empty())
+	{
+	    p->next = q.top();
+	    p = p->next;
+	    q.pop();
+	
+	    if (NULL != p && NULL != p->next)
+	    {
+	        q.push(p->next);
+	    }
+	}
+	
+	return head.next;
+
+```
+
+---
+#### [std::make_heap](http://www.cplusplus.com/reference/algorithm/make_heap/)
+
+这个主要是学习一下std::make_heap, std::push_heap, std::pop_heap的使用，也需要使用跟std::priority_queue同样的 ListNodeComparer，实测速度跟std::priority_queue差不多。
+
+因为std::priority_queue通常是std::vector的adapter，因此如果不是特别需要随机访问std::vector中的元素的话，可能没有必要使用std::make_heap，直接使用std::priority_queue即可。
+
