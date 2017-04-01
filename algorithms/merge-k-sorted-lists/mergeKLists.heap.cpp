@@ -1,16 +1,16 @@
 
 // Source : https://leetcode.com/problems/merge-k-sorted-lists/
 // Author : lixianmin?live.cn
-// Date   : 2017-03-29
+// Date   : 2017-03-31
 
 /**********************************************************************************
  * Merge k sorted linked lists and return it as one sorted list. Analyze and
  * describe its complexity.
 **********************************************************************************/
 
+#include <algorithm>
 #include <cstdio>
 #include <cstdlib>
-#include <algorithm>
 #include <numeric>
 #include <deque>
 #include <queue>
@@ -29,8 +29,6 @@ struct ListNode
 
 struct ListNodeComparer
 {
-    // 优先队列中，默认使用的是std::less<int>，然而此时是最大值先被pop()出
-    // 我们希望的是最小值先被pop()出，因此需要使用类std::greater<int>规则
     bool operator() (const ListNode* lhs, const ListNode* rhs) const
     {
         return lhs->val > rhs->val;
@@ -48,28 +46,33 @@ public:
             return NULL;
         }
 
-        typedef std::priority_queue<ListNode*, std::vector<ListNode*>, ListNodeComparer> PriorityQueue;
-        PriorityQueue q;
+        std::vector<ListNode*> v;
 
         for (int i= 0; i< count; ++i)
         {
             ListNode* p = lists[i];
             if (NULL != p)
             {
-                q.push(p);
+                v.push_back(p);
             }
         }
 
+        ListNodeComparer cmp;
+        std::make_heap(v.begin(), v.end(), cmp);
+
         ListNode head(0), *p = &head;
-        while (!q.empty())
+        while (!v.empty())
         {
-            p->next = q.top();
+            p->next = v.front();
             p = p->next;
-            q.pop();
+
+            std::pop_heap(v.begin(), v.end(), cmp);
+            v.pop_back();
 
             if (NULL != p && NULL != p->next)
             {
-                q.push(p->next);
+                v.push_back(p->next);
+                std::push_heap(v.begin(), v.end(), cmp);
             }
         }
 
@@ -103,9 +106,8 @@ int main ()
     v.push_back(l2);
     v.push_back(l3);
     v.push_back(l4);
+    v.push_back(NULL);
 
-    // ListNode* l1 = new ListNode(5, new ListNode(3, new ListNode(1)));
-    // ListNode* l2 = new ListNode(12, new ListNode(10, new ListNode(9, new ListNode(4, new ListNode(2)))));
     test (v);
 
     printf("\n");
