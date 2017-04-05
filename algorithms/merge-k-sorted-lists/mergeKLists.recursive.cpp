@@ -48,8 +48,8 @@ public:
 
     ListNode* mergeTwoLists (ListNode* l1, ListNode* l2)
     {
-        ListNode preHead(0);
-        ListNode *p = &preHead;
+        ListNode dummy(0);
+        ListNode *p = &dummy;
 
         while (l1 && l2)
         {
@@ -68,7 +68,7 @@ public:
         }
 
         p->next = NULL != l1 ? l1 : l2;
-        return preHead.next;
+        return dummy.next;
     }
 };
 

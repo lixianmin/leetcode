@@ -60,7 +60,7 @@ public:
         ListNodeComparer cmp;
         std::make_heap(v.begin(), v.end(), cmp);
 
-        ListNode head(0), *p = &head;
+        ListNode dummy(0), *p = &dummy;
         while (!v.empty())
         {
             p->next = v.front();
@@ -76,7 +76,7 @@ public:
             }
         }
 
-        return head.next;
+        return dummy.next;
     }
 };
 
@@ -109,6 +109,12 @@ int main ()
     v.push_back(NULL);
 
     test (v);
+
+    v.clear();
+    l1 = new ListNode(0, new ListNode(2, new ListNode(5)));
+    v.push_back(l1);
+    test (v);
+
 
     printf("\n");
 }

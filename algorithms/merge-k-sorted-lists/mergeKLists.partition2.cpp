@@ -1,19 +1,18 @@
 
 // Source : https://leetcode.com/problems/merge-k-sorted-lists/
 // Author : lixianmin?live.cn
-// Date   : 2017-03-29
+// Date   : 2017-04-05
 
 /**********************************************************************************
  * Merge k sorted linked lists and return it as one sorted list. Analyze and
  * describe its complexity.
 **********************************************************************************/
 
+#include <algorithm>
 #include <cstdio>
 #include <cstdlib>
-#include <algorithm>
 #include <numeric>
 #include <deque>
-#include <queue>
 #include <string>
 #include <vector>
 #include <unordered_map>
@@ -27,16 +26,6 @@ struct ListNode
     ListNode(int x, ListNode* next): val(x), next(next) {}
 };
 
-struct ListNodeComparer
-{
-    // 优先队列中，默认使用的是std::less<int>，然而此时是最大值先被pop()出
-    // 我们希望的是最小值先被pop()出，因此需要使用类std::greater<int>规则
-    bool operator() (const ListNode* lhs, const ListNode* rhs) const
-    {
-        return lhs->val > rhs->val;
-    }
-};
-
 class Solution
 {
 public:
@@ -48,32 +37,48 @@ public:
             return NULL;
         }
 
-        typedef std::priority_queue<ListNode*, std::vector<ListNode*>, ListNodeComparer> PriorityQueue;
-        PriorityQueue q;
+        ListNode* result = _partition (lists, 0, count-1);
+        return result;
+    }
 
-        for (int i= 0; i< count; ++i)
+private:
+    ListNode* _partition (std::vector<ListNode*>& lists, int startIndex, int endIndex)
+    {
+        if (startIndex == endIndex)
         {
-            ListNode* p = lists[i];
-            if (NULL != p)
-            {
-                q.push(p);
-            }
+            return lists[startIndex];
         }
 
-        ListNode dummy(0), *p = &dummy;
-        while (!q.empty())
-        {
-            p->next = q.top();
-            p = p->next;
-            q.pop();
+        int mid = (startIndex + endIndex) / 2;
+        ListNode* left = _partition (lists, startIndex, mid);
+        ListNode* right = _partition (lists, mid + 1, endIndex);
 
-            if (NULL != p && NULL != p->next)
+        ListNode* result = _mergeTwoLists(left, right);
+        return result;
+    }
+
+    ListNode* _mergeTwoLists (ListNode* l1, ListNode* l2)
+    {
+        ListNode *head = NULL, **p = &head;
+
+        while (l1 && l2)
+        {
+            if (l1->val < l2->val)
             {
-                q.push(p->next);
+                *p = l1;
+                l1 = l1->next;
             }
+            else
+            {
+                *p = l2;
+                l2 = l2->next;
+            }
+
+            p = &(*p)->next;
         }
 
-        return dummy.next;
+        *p = NULL != l1 ? l1 : l2;
+        return head;
     }
 };
 
@@ -103,9 +108,8 @@ int main ()
     v.push_back(l2);
     v.push_back(l3);
     v.push_back(l4);
+    v.push_back(NULL);
 
-    // ListNode* l1 = new ListNode(5, new ListNode(3, new ListNode(1)));
-    // ListNode* l2 = new ListNode(12, new ListNode(10, new ListNode(9, new ListNode(4, new ListNode(2)))));
     test (v);
 
     printf("\n");
