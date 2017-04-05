@@ -13,9 +13,9 @@
  * Note: Given n will always be valid.  Try to do this in one pass.
  **********************************************************************************/
 
+#include <algorithm>
 #include <cstdio>
 #include <cstdlib>
-#include <algorithm>
 #include <numeric>
 #include <string>
 #include <vector>
@@ -53,10 +53,10 @@ public:
             return head;
         }
 
-        ListNode preHead(0);
-        preHead.next = head;
+        ListNode dummy(0);
+        dummy.next = head;
 
-        ListNode* first = &preHead, *second= &preHead;
+        ListNode* first = &dummy, *second= &dummy;
         for (int i= 0; i<= n && NULL != first; ++i)
         {
             first = first->next;
@@ -76,7 +76,7 @@ public:
         }
 
         // second->Print();
-        return preHead.next;
+        return dummy.next;
     }
 };
 
