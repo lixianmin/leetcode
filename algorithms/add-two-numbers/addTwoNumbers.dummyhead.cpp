@@ -44,8 +44,8 @@ public:
         }
 
         int extra = 0;
-        ListNode head(0);
-        ListNode *p = &head;
+        ListNode dummy(0);
+        ListNode *p = &dummy;
         while (NULL != l1 || NULL != l2 || extra != 0)
         {
             int sum = (l1?l1->val:0) + (l2?l2->val:0) + extra;
@@ -58,7 +58,7 @@ public:
             l2 = l2 ? l2->next : NULL;
         }
 
-        return head.next;
+        return dummy.next;
     }
 };
 
