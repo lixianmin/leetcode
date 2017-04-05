@@ -31,10 +31,10 @@ struct ListNodeComparer
 Caution:
 
 1. 不能直接使用std::priority_quque<> q(v.begin(), v.end());的形式去创建q，因为v中的指针有可能是NULL啊
-2. 在链表相关的问题中，使用一个**栈上的preHead对象**，很多时候可以极大简化链表指针的调整逻辑， 参考代码如下：
+2. 在链表相关的问题中，使用一个**栈上的dummy head对象**，很多时候可以极大简化链表指针的调整逻辑， 参考代码如下：
 
 ```
-	ListNode head(0), *p = &head;
+	ListNode dummy(0), *p = &dummy;
 	while (!q.empty())
 	{
 	    p->next = q.top();
@@ -47,9 +47,26 @@ Caution:
 	    }
 	}
 	
-	return head.next;
+	return dummy.next;
 
 ```
+3. 然而，使用dummy head对象的方案，完全可以用**two star pointers**来代替，而且代码看起来更加简单一些：
+
+```
+    ListNode *head= NULL, **p = &head;
+    while (!q.empty())
+    {
+        *p = q.top();
+        p = &(*p)->next;
+        q.pop();
+
+        if (NULL != *p)
+        {
+            q.push(*p);
+        }
+    }
+```
+
 
 ---
 #### [std::make_heap](http://www.cplusplus.com/reference/algorithm/make_heap/)
