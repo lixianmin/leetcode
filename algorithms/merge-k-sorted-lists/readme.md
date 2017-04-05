@@ -50,21 +50,21 @@ Caution:
 	return dummy.next;
 
 ```
-3. 然而，使用dummy head对象的方案，完全可以用**two star pointers**来代替，而且代码看起来更加简单一些：
+3. 然而，使用dummy head对象的方案，完全可以用**two star pointers**来代替，而且代码看起来更加简单一些：
 
 ```
-    ListNode *head= NULL, **p = &head;
-    while (!q.empty())
-    {
-        *p = q.top();
-        p = &(*p)->next;
-        q.pop();
+	ListNode *head= NULL, **p = &head;
+	while (!q.empty())
+	{
+	    *p = q.top();
+	    p = &(*p)->next;
+	    q.pop();
 
-        if (NULL != *p)
-        {
-            q.push(*p);
-        }
-    }
+	    if (NULL != *p)
+	    {
+	        q.push(*p);
+	    }
+	}
 ```
 
 
