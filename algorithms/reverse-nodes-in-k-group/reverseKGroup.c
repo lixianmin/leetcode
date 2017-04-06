@@ -83,7 +83,7 @@ void list_destroy (struct ListNode** node)
 
 //////////////////////////////////////////////////////////////////////////////////
 
-struct ListNode* reverseList (struct ListNode **head, int k)
+struct ListNode* reverseList (struct ListNode *head, int k)
 {
     if (!head || k <= 0)
     {
@@ -92,24 +92,24 @@ struct ListNode* reverseList (struct ListNode **head, int k)
 
     struct ListNode *h = NULL, *p = NULL;
     int count = 0;
-    while (*head && count < k)
+    while (head && count < k)
     {
         // 这个写法真是行云流水：每一行的右值，是下一行的左值
-        p = (*head)->next;
-        (*head)->next = h;
-        h = *head;
-        *head = p;
+        p = (head)->next;
+        (head)->next = h;
+        h = head;
+        head = p;
 
         ++count;
     }
 
-    return h;
+    return head;
 }
 
 struct ListNode* reverseKGroup (struct ListNode* head, int k)
 {
     int count = 0;
-    struct ListNode* h = head, *tail = NULL, *newHead = head;
+    struct ListNode* h = head, *tail = head, *newHead = head;
     while (h)
     {
         ++count;
@@ -122,28 +122,36 @@ struct ListNode* reverseKGroup (struct ListNode* head, int k)
         h = h->next;
     }
 
+    struct ListNode *lastTail = NULL;
     while (count > k)
     {
         count -= k;
+        h = NULL;
 
-        while (head)
+        for (int i= 0; i< k; ++i)
         {
-            struct ListNode *t = head;
-            h = reverseList (&head, k);
-            t->next = head;
-
-            if (tail)
-            {
-                tail->next = h;
-            }
-
-            tail = t;
-
-            list_print("h: ", h);
-            list_print("tail: ", tail);
-            list_print("newHead 0: ", newHead);
-            puts ("------------------------------------");
+            struct ListNode *p = head->next;
+            head->next = h;
+            h = head;
+            head = p;
         }
+
+        if (NULL != lastTail)
+        {
+            lastTail->next = h;
+        }
+
+        list_print("newHead 0: ", newHead);
+        list_print("h: ", h);
+        list_print("head: ", head);
+        list_print("tail: ", tail);
+        list_print("lastTail: ", lastTail);
+        puts ("------------------------------------");
+
+        lastTail = tail;
+
+        tail->next = head;
+        tail = tail->next;
     }
 
     return newHead;
@@ -160,12 +168,12 @@ void test (struct ListNode* head, int k)
 
 int main ()
 {
-    int a1[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int a1[] = {1, 2, 3, 4, 5, 6, 7, 8};
     struct ListNode* l1 = list_create (a1, sizeof(a1)/sizeof(a1[0]));
 
     struct ListNode* l3 = NULL;
 
-    /* test (l1, 3); */
+    test (l1, 3);
     /* test (l3, 2); */
 
     /* list_destroy(&l1); */
