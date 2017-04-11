@@ -1,7 +1,7 @@
 
 // Source : https://leetcode.com/problems/reverse-nodes-in-k-group/
 // Author : lixianmin?live.cn
-// Date   : 2017-04-06
+// Date   : 2017-04-11
 
 /**********************************************************************************
  * Given a linked list, reverse the nodes of a linked list k at a time and return
@@ -83,77 +83,37 @@ void list_destroy (struct ListNode** node)
 
 //////////////////////////////////////////////////////////////////////////////////
 
-struct ListNode* reverseList (struct ListNode *head, int k)
+struct ListNode* reverse (struct ListNode *first, struct ListNode *last)
 {
-    if (!head || k <= 0)
+    assert (NULL != first);
+    struct ListNode *prev = last;
+
+    while (first != last)
     {
-        return NULL;
+        struct ListNode *temp = first->next;
+        first->next = prev;
+        prev = first;
+        first = temp;
     }
 
-    struct ListNode *h = NULL, *p = NULL;
-    int count = 0;
-    while (head && count < k)
-    {
-        // 这个写法真是行云流水：每一行的右值，是下一行的左值
-        p = (head)->next;
-        (head)->next = h;
-        h = head;
-        head = p;
-
-        ++count;
-    }
-
-    return head;
+    return prev;
 }
 
 struct ListNode* reverseKGroup (struct ListNode* head, int k)
 {
-    int count = 0;
-    struct ListNode* h = head, *tail = head, *newHead = head;
-    while (h)
+    struct ListNode *node = head;
+    for (int i= 0; i< k; ++i)
     {
-        ++count;
-
-        if (count == k)
+        if (!node)
         {
-            newHead = h;
+            return head;
         }
 
-        h = h->next;
+        node = node->next;
     }
 
-    struct ListNode *face = head, **butt= &head;
-    struct ListNode dummy, *lastTail = &dummy;
-    dummy.next = head;
-
-    while (count >= k)
-    {
-        count -= k;
-        h = NULL;
-
-        for (int i= 0; i< k; ++i)
-        {
-            struct ListNode *p = face->next;
-            face->next = h;
-            h = face;
-            face= p;
-        }
-
-        struct ListNode* last = lastTail->next;
-        lastTail->next = h;
-        lastTail = tail;
-
-        list_print("newHead 0: ", newHead);
-        list_print("h: ", h);
-        list_print("face: ", face);
-        list_print("tail: ", tail);
-        list_print("lastTail: ", lastTail);
-        puts ("------------------------------------");
-
-        tail->next = face;
-        tail = tail->next;
-    }
-
+    struct ListNode* newHead = reverse (head, node);
+    head->next = reverseKGroup (node, k);
     return newHead;
 }
 
@@ -177,8 +137,8 @@ int main ()
     struct ListNode* l3 = NULL;
 
     test (l1, 3);
-    /* test (l2, 2); */
-    /* test (l3, 2); */
+    test (l2, 2);
+    test (l3, 2);
 
     /* list_destroy(&l1); */
     /* list_destroy(&l3); */
