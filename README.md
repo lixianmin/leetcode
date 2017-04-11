@@ -27,4 +27,6 @@
 |19     | [Remove Nth Node From End of List](https://github.com/lixianmin/leetcode/tree/master/algorithms/remove-nth-node-from-end-of-list) | [C++](https://github.com/lixianmin/leetcode/tree/master/algorithms/remove-nth-node-from-end-of-list) | Medium |
 |23	  | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)  | [C++](https://github.com/lixianmin/leetcode/tree/master/algorithms/merge-k-sorted-lists) | Hard |
 |24	  | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [C++](https://github.com/lixianmin/leetcode/tree/master/algorithms/swap-nodes-in-pairs) | Medium |
+|25	| [Reverse Node in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [C](https://github.com/lixianmin/leetcode/tree/master/algorithms/reverse-nodes-in-k-group) | Hard |
 |206	| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| [C++](https://github.com/lixianmin/leetcode/tree/master/algorithms/reverse-linked-list) | Easy |
+
