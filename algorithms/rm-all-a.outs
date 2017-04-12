@@ -1,3 +1,4 @@
 #!/bin/sh
 
 find . -name *.out -exec rm {} \;
+find . -name "*.out.dSYM" -exec rm -r {} \;
