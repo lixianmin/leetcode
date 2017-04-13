@@ -23,6 +23,7 @@
 |--	 |--		    |--			|--             |
 |1	 | [Two Sum](https://leetcode.com/problems/two-sum/)  | [C++](https://github.com/lixianmin/leetcode/tree/master/algorithms/two-sum) | Easy |
 |2	 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | [C++](https://github.com/lixianmin/leetcode/tree/master/algorithms/add-two-numbers) | Medium |
+|3   | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)| [C++](algorithms/longest-substring-without-repeating-characters) | Medium |
 |18	 | [4Sum](https://leetcode.com/problems/4sum) | [C++](https://github.com/lixianmin/leetcode/tree/master/algorithms/4sum)| Medium	|
 |19  | [Remove Nth Node From End of List](https://github.com/lixianmin/leetcode/tree/master/algorithms/remove-nth-node-from-end-of-list) | [C++](https://github.com/lixianmin/leetcode/tree/master/algorithms/remove-nth-node-from-end-of-list) | Medium |
 |23	 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)  | [C++](https://github.com/lixianmin/leetcode/tree/master/algorithms/merge-k-sorted-lists) | Hard |
