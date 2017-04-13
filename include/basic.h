@@ -10,6 +10,7 @@ Copyright (C) - All Rights Reserved
 #define PANDA_BASIC_H
 
 #include <assert.h>
+#include <limits.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
