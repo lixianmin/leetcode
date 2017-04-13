@@ -19,19 +19,33 @@
 
 #### 代码清单
 
-|#   | Problem   | Solution  | Difficulty	|
-|--	 |--		    |--			|--             |
-|1	 | [Two Sum](https://leetcode.com/problems/two-sum/)  | [C++](algorithms/two-sum) | Easy |
+|#   | Problem   | Solution | Difficulty	|
+|--	 |--		 |--		|--             |
+|1	 | [Two Sum](https://leetcode.com/problems/two-sum)  | [C++](algorithms/two-sum) | Easy |
 |2	 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | [C++](algorithms/add-two-numbers) | Medium |
-|3   | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)| [C++](algorithms/longest-substring-without-repeating-characters) | Medium |
+|3   | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)| [C++](algorithms/longest-substring-without-repeating-characters) | Medium |
+|5   | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)| [C++](algorithms/longest-palindromic-substring) | Medium |
+|6   | [ZigZag Conversion](https://leetcode.com/problemset/algorithms/zigzag-conversion)| [C++](algorithms/zigzag-conversion) | Medium |
+|7   | [Reverse Integer](https://leetcode.com/problemset/algorithms/reverse-integer)| [C++](algorithms/reverse-integer) | Easy |
+|8   | [Reverse Integer (atoi)](https://leetcode.com/problemset/algorithms/string-to-integer-atoi)| [C++](algorithms/string-to-integer-atoi) | Medium |
+|9   | [Palindrome Number ](https://leetcode.com/problemset/algorithms/palindrome-number)| [C++](algorithms/palindrome-number) | Easy |
+|11  | [Container With Most Water](https://leetcode.com/problemset/algorithms/container-with-most-water)| [C++](algorithms/container-with-most-water) | Medium |
+|14  | [Longest Common Prefix](https://leetcode.com/problemset/algorithms/longest-common-prefix)| [C++](algorithms/longest-common-prefix) | Easy |
+|15  | [3Sum](https://leetcode.com/problemset/algorithms/3sum)| [C++](algorithms/3sum) | Medium |
+|16  | [3Sum Closest](https://leetcode.com/problemset/algorithms/3sum-closest)| [C++](algorithms/3sum-closest) | Medium |
+|17  | [Letter Combinations of a Phone Number](https://leetcode.com/problemset/algorithms/letter-combinations-of-a-phone-number)| [C++](algorithms/letter-combinations-of-a-phone-number) | Medium |
 |18	 | [4Sum](https://leetcode.com/problems/4sum) | [C++](algorithms/4sum)| Medium	|
 |19  | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | [C++](algorithms/remove-nth-node-from-end-of-list) | Medium |
-|23	 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)  | [C++](algorithms/merge-k-sorted-lists) | Hard |
-|24	 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [C++](algorithms/swap-nodes-in-pairs) | Medium |
-|25	 | [Reverse Node in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [C](algorithms/reverse-nodes-in-k-group) | Hard |
+|20  | [Valid Parentheses](https://leetcode.com/problemset/algorithms/valid-parentheses)| [C++](algorithms/valid-parentheses) | Easy |
+|21  | [Merge Two Sorted Lists](https://leetcode.com/problemset/algorithms/merge-two-sorted-lists)| [C++](algorithms/merge-two-sorted-lists) | Easy |
+|22	 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [C++](algorithms/generate-parentheses) | Medium |
+|23	 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists)  | [C++](algorithms/merge-k-sorted-lists) | Hard |
+|24	 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | [C++](algorithms/swap-nodes-in-pairs) | Medium |
+|25	 | [Reverse Node in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group) | [C](algorithms/reverse-nodes-in-k-group) | Hard |
+|26  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)| [C++](algorithms/remove-duplicates-from-sorted-array) | Easy |
+|38  | [Count and Say](https://leetcode.com/problems/count-and-say)| [C++](algorithms/count-and-say) | Easy |
 |92	 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) | [C](algorithms/reverse-linked-list-ii) | Medium |
-|206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| [C++](algorithms/reverse-linked-list) | Easy |
-|234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)| [C](algorithms/palindrome-linked-list) | Easy |
-
-| | []()| [C]() | |
+|138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | [C](algorithms/copy-list-with-random-pointer) | Medium |
+|206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)| [C++](algorithms/reverse-linked-list) | Easy |
+|234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)| [C](algorithms/palindrome-linked-list) | Easy |
 
