@@ -19,8 +19,8 @@ int divide (int dividend, int divisor) {
     }
 
     ll result = 0;
-    ll dvd = abs (dividend);
-    ll dvs = abs (divisor);
+    ll dvd = labs (dividend);
+    ll dvs = labs (divisor);
 
     while (dvd >= dvs) {
         ll temp = dvs;
