@@ -54,6 +54,9 @@
 |38  | [Count and Say](https://leetcode.com/problems/count-and-say)| [C++](algorithms/count-and-say) | Easy |
 |92	 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) | [C](algorithms/reverse-linked-list-ii) | Medium |
 |138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | [C](algorithms/copy-list-with-random-pointer) | Medium |
+|141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | [C](algorithms/linked-list-cycle) | Easy|
 |206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)| [C++](algorithms/reverse-linked-list) | Easy |
 |234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)| [C](algorithms/palindrome-linked-list) | Easy |
+|237 | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)| [C](algorithms/delete-node-in-a-linked-list) | Easy |
+|242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram)| [C](algorithms/valid-anagram) | Easy |
 
