@@ -50,7 +50,7 @@
 |27  | [Remove Element](https://leetcode.com/problems/remove-element)|[C](algorithms/remove-element) | Easy |
 |28  | [Implement strStr()](https://leetcode.com/problems/implement-strstr)|[C](algorithms/implement-strstr) | Easy |
 |29  | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers)|[C](algorithms/divide-two-integers) | Medium |
-|30  | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words)| | Hard |
+|30  | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words)|[Ruby](algorithms/substring-with-concatenation-of-all-words) | Hard |
 |38  | [Count and Say](https://leetcode.com/problems/count-and-say)| [C++](algorithms/count-and-say) | Easy |
 |92	 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) | [C](algorithms/reverse-linked-list-ii) | Medium |
 |138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | [C](algorithms/copy-list-with-random-pointer) | Medium |
