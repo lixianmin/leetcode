@@ -51,7 +51,15 @@
 |28  | [Implement strStr()](https://leetcode.com/problems/implement-strstr)|[C](algorithms/implement-strstr) | Easy |
 |29  | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers)|[C](algorithms/divide-two-integers) | Medium |
 |30  | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words)|[Ruby](algorithms/substring-with-concatenation-of-all-words) | Hard |
+|31  | [Next Permutation](https://leetcode.com/problems/next-permutation)| | Medium |
+|32  | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses)| | Hard |
+|33  | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)| | Medium |
+|34  | [Search for a Range](https://leetcode.com/problems/search-for-a-range)| | Medium |
+|35  | [Search Insert Position](https://leetcode.com/problems/search-insert-position)| | Easy |
+|36  | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku)| | Medium |
+|37  | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver)| | Hard |
 |38  | [Count and Say](https://leetcode.com/problems/count-and-say)| [C++](algorithms/count-and-say) | Easy |
+|39  | [Combination Sum](https://leetcode.com/problems/combination-sum)| | Medium |
 |92	 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) | [C](algorithms/reverse-linked-list-ii) | Medium |
 |138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | [C](algorithms/copy-list-with-random-pointer) | Medium |
 |141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | [C](algorithms/linked-list-cycle) | Easy|
