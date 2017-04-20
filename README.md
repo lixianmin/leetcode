@@ -60,6 +60,7 @@
 |37  | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver)| | Hard |
 |38  | [Count and Say](https://leetcode.com/problems/count-and-say)| [C++](algorithms/count-and-say) | Easy |
 |39  | [Combination Sum](https://leetcode.com/problems/combination-sum)| | Medium |
+|53  | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Ruby](algorithms/maximum-subarray) | Easy |
 |92	 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) | [C](algorithms/reverse-linked-list-ii) | Medium |
 |121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Ruby](algorithms/best-time-to-buy-and-sell-stock) | Easy|
 |138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | [C](algorithms/copy-list-with-random-pointer) | Medium |
