@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 #encoding:utf-8
 
-# Source : # https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+# Source : https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 # Author : lixianmin?live.cn
 # Date   : 2017-04-17
 #
