@@ -61,6 +61,7 @@
 |38  | [Count and Say](https://leetcode.com/problems/count-and-say)| [C++](algorithms/count-and-say) | Easy |
 |39  | [Combination Sum](https://leetcode.com/problems/combination-sum)| | Medium |
 |92	 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) | [C](algorithms/reverse-linked-list-ii) | Medium |
+|121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Ruby](algorithms/best-time-to-buy-and-sell-stock) | Easy|
 |138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | [C](algorithms/copy-list-with-random-pointer) | Medium |
 |141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | [C](algorithms/linked-list-cycle) | Easy|
 |206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)| [C++](algorithms/reverse-linked-list) | Easy |
