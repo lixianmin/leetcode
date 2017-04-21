@@ -65,6 +65,7 @@
 |121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Ruby](algorithms/best-time-to-buy-and-sell-stock) | Easy|
 |138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | [C](algorithms/copy-list-with-random-pointer) | Medium |
 |141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | [C](algorithms/linked-list-cycle) | Easy|
+|152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray) | [C](algorithms/maximum-product-subarray) | Medium|
 |206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)| [C++](algorithms/reverse-linked-list) | Easy |
 |234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)| [C](algorithms/palindrome-linked-list) | Easy |
 |237 | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)| [C](algorithms/delete-node-in-a-linked-list) | Easy |
